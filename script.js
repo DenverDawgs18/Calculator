@@ -28,3 +28,10 @@ function operate(numberOne, operator, numberTwo){
     }
 }
 
+// Function that updates the display div's content
+function display(content){
+    let dis = document.querySelector(".display");
+    dis.textContent = content; 
+}
+let clear = document.querySelector(".AC");
+clear.addEventListener("click", display(""));
